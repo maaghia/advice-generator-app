@@ -11,13 +11,13 @@
 </head>
 <body>
   <main>
-    <div class="advice-id">Advice # <span></span></div>
-    <div class="advice"></div>
+    <div class="advice-id">Advice # <span id="advice-id"></span></div>
+    <div class="advice" id="advice"></div>
       
     <div class="line-mobile"> <img src="images\pattern-divider-mobile.svg" alt=""> </div>
     <div class="line-desktop"> <img src="images\pattern-divider-desktop.svg" alt=""> </div>
     
-    <div class="dice"><button><img src="images\icon-dice.svg" alt=""></button></div>
+    <div class="dice"><button onclick="fetchAdvice()"><img src="images\icon-dice.svg" alt=""></button></div>
     
   </main>
   <footer>
@@ -27,4 +27,5 @@
     </div>
   </footer>
 </body>
+<script src="script.js"></script>
 </html>

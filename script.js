@@ -3,7 +3,7 @@ let adviceID = document.getElementById("advice-id")
 let advice = document.getElementById("advice")
 const fetchAdvice = async () => {
     try {
-        let res = await fetch("https://api.adviceslip.com/advice")
+        let res = await fetch("https://api.adviceslip.com/advice", {cache: 'no-cache'})
         let info = await res.json();
         console.log(info)
         let data = info.slip;
